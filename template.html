@@ -27,12 +27,21 @@
             overflow-x: hidden;
         }
 
+        .affix {
+
+            z-index: 9999 !important;
+        }
+
+
         .active {
             padding-bottom: 35px;
-            padding-right: 15px;
-            
+            padding-right: 45vw;
             height: 45px;
 
+        }
+
+        .nav navbar-nav {
+            padding-left: 75px;
         }
 
         .img-container {
@@ -45,54 +54,73 @@
         #nav {
             float: right;
             padding-left: 12px;
+
         }
 
         .navbar-brand {
             padding-right: 650px;
+
         }
 
-        .home {
-            font-size: 13px;
+
+        #home {
+            font-size: 20px;
+
+            padding-left: 5px;
+            ;
+
             font-style: initial;
             color: #000;
-           
+
         }
 
         .about {
-            font-size: 13px;
+            font-size: 20px;
+            padding-right: 35px;
+
             color: #000;
             font-style: initial;
         }
 
         .gallery {
             font-size: 13px;
+
+            font-size: 20px;
             color: #000;
             font-style: initial;
         }
 
         .contact {
             font-size: 13px;
-            color: #000;
+            color: rgb(177, 142, 142);
+            font-size: 20px;
             font-style: initial;
         }
 
         .feedback {
             font-size: 13px;
+            font-size: 20px;
             color: #000;
             font-style: initial;
         }
 
         .btn {
-            padding-top: 450px;
+            padding-top: 550px;
             /* padding-right: 185px; */
             font-size: 60px;
-            font-family:  'Jockey One', sans-serif;
+            font-family: 'Jockey One', sans-serif;
             /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
         }
 
+        #img {
+            padding-right: 105px;
+            width: 27vw;
+            height: 20vh;
+        }
+
         #btn1 {
-            padding-left: 300px;
-         
+            padding-left: 450px;
+
         }
 
         #btn2 {
@@ -109,218 +137,220 @@
             color: green;
             margin-top: 15px;
         }
+
+        .nav-item {
+            padding: 0 10px;
+            font-size: 16px
+        }
     </style>
 </head>
 
 <body>
 
     <div>
-        <div class="container-fluid">
-        <div class="collapse navbar-collapse navbar-right">
-            <nav class="navber navber-inverse">
+        <div class="-container-fluid">
+            <!-- <div class="collapse navbar-collapse navbar-right"> -->
+            <!--                 
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo1.jpg" id="img" >
+                        </a>
+                    </div> -->
 
-
-
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="logo1.jpg" width="120px">
-                    </a>
-
-                </div>
-
-
-                <ul class="nav navbar-nav" id="nav">
+            <nav class="navbar navbar-inverse" style="width: 100vw" data-spy="affix" data-offset-top="0">
+                <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#" class="home">HOME</a>
+                        <a href="#">IPL 2018</a>
                     </li>
-                    <li class="active">
-                        <a href="#" class="about">ABOUT</a>
+
+
+                    <li id="-home" class="nav-item">
+                        <a href="#">Home</a>
                     </li>
-                    <li class="active">
-                        <a href="#" class="gallery">GALLERY</a>
+                    <li class="nav-item -about">
+                        <a href="#">About</a>
                     </li>
-                    <li class="active">
-                        <a href="#" class="contact">CONTACT US</a>
+
+                    <li class="nav-item -contact">
+                        <a href="#">Contact</a>
                     </li>
-                    <li class="active">
-                        <a href="#" class="feedback">FEEDBACK</a>
+                    <li class="nav-item -gallery">
+                        <a href="#">Gallery</a>
                     </li>
+                    <li class="nav-item -feedback">
+                        <a href="#">Feedback</a>
+                    </li>
+
                 </ul>
             </nav>
-        </div>
 
-        <div class="nav-header">
-            <div class="img-container">
-                <img src="ipl.jpg" width="100%" height="100%">
+            <div class="nav-header">
+                <div class="img-container">
+                    <img src="ipl.jpg" width="100%" height="100%">
+
+                </div>
 
             </div>
 
         </div>
+        <div class="main-container">
+            <h3 class="btn" id="btn1">Team Captain Info</h3>
+            <div class="container-fluid" id="btn2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/lights.jpg" target="_blank">
+                                    <img src="captain1.gif" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>New Delhi: Kolkata Knight Riders’ choice of players proved that the franchise was
+                                            most calculative at IPL 2018 auction. KKR, which is owned by actor Shah Rukh
+                                            Khan, made sure that they have the right composure and balance as they picked
+                                            some of the most talented players, which include both, experienced players as
+                                            well as youngsters with less or no IPL experience.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-    </div>
-    <div class="main-container">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/nature.jpg" target="_blank">
+                                    <img src="csk.jpg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>Chennai Super Kings Chennai Super King Personnel Captain Mahendra Singh Dhoni[1]
+                                            Coach Stephen Fleming Owner Chennai Super Kings Cricket Ltd[2] Team information
+                                            Official website: chennaisuperkings.com T20I kit Chennai Super Kings in 2018
+                                            The Chennai Super Kings (often abbreviated as CSK) are a franchise cricket team
+                                            based in Chennai, Tamil Nadu, which plays in the Indian Premier League (IPL).</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/nature.jpg" target="_blank">
+                                    <img src="captain2.jpg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>IPL auction 2018: The defending champions Mumbai Indians was one of the few sides
+                                            who were able to keep their core intact in the IPL auction 2018. After retaining
+                                            Rohit Sharma, Hardik Pandya and Jasprit Bumrah earlier this month, the team went
+                                            after its biggest superstar Kieron Pollard. Mumbai Indians used their first RTM
+                                            to retain the big West Indians before getting hold of two good overseas fast-bowlers
+                                            Mustafizur Rahman and Pat Cummins.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/fjords.jpg" target="_blank">
+                                    <img src="mi.jpg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>The dependable Ajinkya Rahane will replace Steve Smith as skipper of Rajasthan Royals
+                                            and lead the team in the eleventh edition of Indian Premier League. “The incident
+                                            in Cape Town has certainly disturbed the cricket world. We have been in constant
+                                            touch with the BCCI and taken their counsel. Furthermore, we have been in regular
+                                            contact with Steve,” director of Rajasthan-based franchise Zubin Bharucha said
+                                            in a statement.The dependable Ajinkya Rahane will replace Steve Smith as IPL.
 
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="btn2">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/lights.jpg" target="_blank">
+                                    <img src="captain3.jpg" alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>NEW DELHI: The 2016 Indian Premier League champions Sunrisers Hyderabad retained
+                                            David Warner and Bhuvneshwar Kumar ahead of the 2018 auction. During the two
+                                            days of the auction, they spent Rs 58.35 crore from available purse of Rs 59
+                                            crore on 23 players. ALSO READ: Complete players' list of eight teams in IPL
+                                            2018 Manish Pandey was their costliest purchase - they secured him for a whopping
+                                            Rs 11 crore.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-        <h3 class="btn" id="btn1">Team Captain Info</h3>
-        <div class="container-fluid" id="btn2">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/nature.jpg" target="_blank">
+                                    <img src="captain4.jpg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>"We were very much in the game. It was a beautiful wicket to bat on, then 150-odd
+                                            for five in 18 overs, we thought we could contain them to 170 and it was chaseable,
+                                            especially with dew coming in later on," Gambhir said after the match. "We were
+                                            very much happy with the first innings. But then in six overs, 71 was tough.
+                                            We had to go from ball one. Obviously with these sort of games, things could
+                                            go either way. Just two overs of powerplay, it's very difficult."</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/nature.jpg" target="_blank">
+                                    <img src="captain5.jpg" alt="Nature" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            RCB Team IPL 2018: Everything on Team, players list, captain, coach, likely playing XI Updated Apr 01, 2018 | 23:26 IST |
+                                            Suyash Srivastava Despite being led by Virat Kohli, one of the most dominating
+                                            batsmen in world cricket, Royal Challengers Bangalore are yet to win their maiden
+                                            IPL title. RCB Team IPL 2018: Everything on Team, players list, captain, coach,
+                                            likely playing XI
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="/w3images/fjords.jpg" target="_blank">
+                                    <img src="captain7.jpg" alt="Fjords" style="width:100%">
+                                    <div class="caption">
+                                        <p>The Kings XI Punjab (abbreviated as KXIP) are a franchise cricket team based in Mohali,
+                                            Punjab, that plays in the Indian Premier League. Established in 2008, the franchise
+                                            is jointly owned by Bollywood actress Preity Zinta,</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="btn3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/lights.jpg" target="_blank">
-                                <img src="captain1.gif" alt="Lights" style="width:100%">
-                                <div class="caption">
-                                    <p>New Delhi: Kolkata Knight Riders’ choice of players proved that the franchise was most
-                                        calculative at IPL 2018 auction. KKR, which is owned by actor Shah Rukh Khan, made
-                                        sure that they have the right composure and balance as they picked some of the most
-                                        talented players, which include both, experienced players as well as youngsters with
-                                        less or no IPL experience.
-                                    </p>
-                                </div>
-                            </a>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" name="name" placeholder=" Name" class="form-control">
+
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="example@gmail.com" class="form-control">
+                            <label for="address"></label>
+                            <input type="text-area" name="addr" placeholder=" Address" class="form-control">
+                            <label for="message"></label>
+                            <textarea placeholder="Your Message" name="meesaage" required style="margin:0px; width:90vw;height:169px"></textarea>
                         </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/nature.jpg" target="_blank">
-                                <img src="csk.jpg" alt="Nature" style="width:100%">
-                                <div class="caption">
-                                    <p>Chennai Super Kings Chennai Super King Personnel Captain Mahendra Singh Dhoni[1] Coach
-                                        Stephen Fleming Owner Chennai Super Kings Cricket Ltd[2] Team information Official
-                                        website: chennaisuperkings.com T20I kit Chennai Super Kings in 2018 The Chennai Super
-                                        Kings (often abbreviated as CSK) are a franchise cricket team based in Chennai, Tamil
-                                        Nadu, which plays in the Indian Premier League (IPL).</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/nature.jpg" target="_blank">
-                                <img src="captain2.jpg" alt="Nature" style="width:100%">
-                                <div class="caption">
-                                    <p>IPL auction 2018: The defending champions Mumbai Indians was one of the few sides who
-                                        were able to keep their core intact in the IPL auction 2018. After retaining Rohit
-                                        Sharma, Hardik Pandya and Jasprit Bumrah earlier this month, the team went after
-                                        its biggest superstar Kieron Pollard. Mumbai Indians used their first RTM to retain
-                                        the big West Indians before getting hold of two good overseas fast-bowlers Mustafizur
-                                        Rahman and Pat Cummins.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/fjords.jpg" target="_blank">
-                                <img src="mi.jpg" alt="Fjords" style="width:100%">
-                                <div class="caption">
-                                    <p>The dependable Ajinkya Rahane will replace Steve Smith as skipper of Rajasthan Royals
-                                        and lead the team in the eleventh edition of Indian Premier League. “The incident
-                                        in Cape Town has certainly disturbed the cricket world. We have been in constant
-                                        touch with the BCCI and taken their counsel. Furthermore, we have been in regular
-                                        contact with Steve,” director of Rajasthan-based franchise Zubin Bharucha said in
-                                        a statement.The dependable Ajinkya Rahane will replace Steve Smith as IPL.
-
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="btn2">
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/lights.jpg" target="_blank">
-                                <img src="captain3.jpg" alt="Lights" style="width:100%">
-                                <div class="caption">
-                                    <p>NEW DELHI: The 2016 Indian Premier League champions Sunrisers Hyderabad retained David
-                                        Warner and Bhuvneshwar Kumar ahead of the 2018 auction. During the two days of the
-                                        auction, they spent Rs 58.35 crore from available purse of Rs 59 crore on 23 players.
-                                        ALSO READ: Complete players' list of eight teams in IPL 2018 Manish Pandey was their
-                                        costliest purchase - they secured him for a whopping Rs 11 crore.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/nature.jpg" target="_blank">
-                                <img src="captain4.jpg" alt="Nature" style="width:100%">
-                                <div class="caption">
-                                    <p>"We were very much in the game. It was a beautiful wicket to bat on, then 150-odd for
-                                        five in 18 overs, we thought we could contain them to 170 and it was chaseable, especially
-                                        with dew coming in later on," Gambhir said after the match. "We were very much happy
-                                        with the first innings. But then in six overs, 71 was tough. We had to go from ball
-                                        one. Obviously with these sort of games, things could go either way. Just two overs
-                                        of powerplay, it's very difficult."</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/nature.jpg" target="_blank">
-                                <img src="captain5.jpg" alt="Nature" style="width:100%">
-                                <div class="caption">
-                                    <p>
-                                        RCB Team IPL 2018: Everything on Team, players list, captain, coach, likely playing XI Updated Apr 01, 2018 | 23:26 IST |
-                                        Suyash Srivastava Despite being led by Virat Kohli, one of the most dominating batsmen
-                                        in world cricket, Royal Challengers Bangalore are yet to win their maiden IPL title.
-                                        RCB Team IPL 2018: Everything on Team, players list, captain, coach, likely playing
-                                        XI
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <a href="/w3images/fjords.jpg" target="_blank">
-                                <img src="captain7.jpg" alt="Fjords" style="width:100%">
-                                <div class="caption">
-                                    <p>The Kings XI Punjab (abbreviated as KXIP) are a franchise cricket team based in Mohali,
-                                        Punjab, that plays in the Indian Premier League. Established in 2008, the franchise
-                                        is jointly owned by Bollywood actress Preity Zinta,</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="btn3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="name"></label>
-                        <input type="text" name="name" placeholder=" Name" class="form-control">
-
-                        <label for="email"></label>
-                        <input type="email" name="email" placeholder="example@gmail.com" class="form-control">
-                        <label for="address"></label>
-                        <input type="text-area" name="addr" placeholder=" Address" class="form-control">
-                        <label for="message"></label>
-                        <textarea placeholder="Your Message" name="meesaage" required style="margin:0px; width:90vw;height:169px"></textarea>
-
-
-
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <center>
         <input type="Submit" value="Submit Message" class="b1">
     </center>
-</div>
+    </div>
 
 </body>
 
